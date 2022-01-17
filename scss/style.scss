@@ -1,0 +1,10 @@
+@import '_normalize.scss';
+@import '_variables.scss';
+@import '_interface.scss';
+@import '_grid.scss';
+@import 'templates/_header.scss';
+
+body{
+    font-family: sans-serif;
+    font-size: 14px;
+}
