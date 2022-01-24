@@ -3,16 +3,12 @@
 @import '_variables.scss';
 @import '_interface.scss';
 @import '_grid.scss';
+@import '_settings.scss';
 @import 'templates/_header.scss';
 @import 'templates/_hero.scss';
+@import 'templates/_control.scss';
+@import 'templates/_types.scss';
 
 
-*,
-*::after,
-*::before{
-    box-sizing: border-box;
-}
-body{
-    font-family: 'Futura Book', sans-serif;
-    font-size: 14px;
-}
+@import '_media.scss';
+
