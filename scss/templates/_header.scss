@@ -24,7 +24,9 @@
         text-transform: uppercase;
         margin-right: 2.5rem;
         transition: color .3s;
-
+        &:last-child{
+            margin-right: 0;
+        }
         &:hover{
             color: $primary;
         }
