@@ -24,6 +24,9 @@ img{
         &-light{
             color: $light;
         }
+        &-center{
+            margin: 0 auto;
+        }
         &-left{
             text-align: left;
         }
@@ -70,6 +73,7 @@ img{
             text-transform: none;
             font-size: 1.43rem;
             line-height: 1.93rem;
+            max-width: 25.71rem;
             &-center{
                 margin: 0 auto;
             }

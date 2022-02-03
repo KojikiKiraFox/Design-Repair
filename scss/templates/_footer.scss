@@ -56,4 +56,19 @@
             width: 100%;
         }
     }
+    &__item{
+        &-untitle{
+            font-size: 1.428rem;
+            line-height: 2rem;
+            color: $primary;
+        }
+        &-social{
+            &--link{
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background-color: $primary;
+            }
+        }
+    }
 }

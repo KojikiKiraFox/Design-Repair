@@ -23,8 +23,6 @@
     .col-30{
         display: flex;
     .card{
-        position: relative;
-        max-width: 19.43rem;
         &::before{
             content: '';
             position: absolute;

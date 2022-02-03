@@ -24,6 +24,7 @@ $(document).ready(function () {
     });
 
 
+
     const swiper = new Swiper('.swiper', {
     loop: true,
     pagination: {
@@ -45,6 +46,12 @@ $(document).ready(function () {
     next.css('left', prev.width() + 10 + bullets.width() + 10)
     bullets.css('left', prev.width() + 10)
     
+    var nextSteps = $('.swiper-button-next_2');
+    var bulletsSteps = $('.swiper-pagination_2');
+
+    nextSteps.css('left', prev.width() + 10 + bulletsSteps.width() + 10)
+    bulletsSteps.css('left', prev.width() + 10)
+
 
     new WOW().init();
 
@@ -77,8 +84,6 @@ $(document).ready(function () {
         }
         }
     });
-    
     // Маска для телефона
-
     $('[type=tel]').mask('+7(000) 000-00-00', {placeholder: "+7(___) ___-__-__"});
 });
