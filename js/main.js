@@ -18,6 +18,13 @@ $(document).ready(function () {
         };
     });
 
+    $(".hero__scroll-down").click(function() { // ID откуда кливаем
+    $('html, body').animate({
+        scrollTop: $(".types").offset().top  // класс объекта к которому приезжаем
+    }, 1000); // Скорость прокрутки
+    });
+
+
     $(document).on('keydown', function(e) {
     if (e.keyCode == 27)
     modal.removeClass('modal-visible')

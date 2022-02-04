@@ -1,5 +1,6 @@
 .footer{
     padding-top: 3rem;
+    background: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%), url(../img/footer/bg.png) no-repeat center/cover;
     &__wrap{
         background-color: $black;
         max-width: 63.07rem;
