@@ -1399,17 +1399,54 @@ img {
   width: 100%;
 }
 
+.footer__item {
+  max-width: 455px;
+  width: 100%;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 3.071rem;
+}
+
 .footer__item-untitle {
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
   font-size: 1.428rem;
   line-height: 2rem;
   color: #E3B873;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.footer__item-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .footer__item-social--link {
-  width: 40px;
-  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 28px;
+  height: 28px;
   border-radius: 50%;
   background-color: #E3B873;
+}
+
+.footer__item-social--link:not(:last-child) {
+  margin-right: 1rem;
 }
 
 .modal {
@@ -1499,6 +1536,9 @@ img {
 }
 
 @media screen and (max-width: 1200px) {
+  .container {
+    width: 90%;
+  }
   html {
     font-size: 12px;
   }
@@ -1514,9 +1554,6 @@ __item {
   }
   .hero__insta {
     display: none;
-  }
-  .hero__content {
-    margin-left: 0;
   }
 }
 
@@ -1535,6 +1572,74 @@ __item {
   }
   .card__text {
     margin-left: 0;
+  }
+  .control {
+    background-color: #131313;
+  }
+  .control__text {
+    color: #fff;
+  }
+  .control__form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    color: #fff;
+  }
+  .control__input-group:not(:last-child) {
+    margin-bottom: 5.25rem;
+  }
+  .steps {
+    display: none;
+  }
+  .team {
+    background-color: #131313;
+  }
+  .design {
+    background-color: #131313;
+  }
+  .reviews {
+    display: none;
+  }
+  .footer {
+    background-color: #131313;
+    background-image: none;
+  }
+  .footer .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer__wrap {
+    margin-top: 0;
+  }
+  .footer__menu {
+    display: none;
+  }
+  .footer__item {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    max-width: 315px;
+  }
+  .footer__map-item {
+    -webkit-box-ordinal-group: -10;
+        -ms-flex-order: -11;
+            order: -11;
+    max-height: 367px;
+  }
+  .team .col-30:not(:last-child) {
+    margin-bottom: 4.5rem;
+  }
+  .section-title__heading {
+    color: #fff;
+  }
+  .section-title__subtitle {
+    color: #fff;
   }
 }
 

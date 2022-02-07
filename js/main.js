@@ -89,6 +89,18 @@ $(document).ready(function () {
             required: "Обязательно укажите email",
             email: "Введите в формате: name@domain.com"
         }
+        },
+        submitHandler: function(form){
+            $.ajax({
+                type: "POST",
+                url: "send.php",
+                data: $(form).serialize(),
+                success: function (response) {
+                    alert('Форма отправлена, мы свяжемся через 10 минут');
+                    $(form)[0].rest();
+                    modal.removeClass('modal-visible')
+                }
+            });
         }
     });
     // Маска для телефона
