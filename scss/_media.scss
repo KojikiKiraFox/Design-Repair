@@ -1,3 +1,36 @@
+@media screen and ( max-width: 2000px){
+    .styles{
+        .col{
+            .col-2{
+                right: 20%;
+            }
+        }
+    }
+}
+@media screen and ( max-width: 1700px){
+    .styles{
+        .col{
+            .col-1{
+                right: 35% ;
+            }
+            .col-2{
+                right: 10%;
+            }
+        }
+    }
+}
+@media screen and ( max-width: 1350px ){
+    .styles{
+        .col{
+            .col-1{
+                right: 30% ;
+            }
+            .col-2{
+                right: 2%;
+            }
+        }
+    }
+}
 @media screen and (max-width:1200px) {
     .container{
         width: 90%;
@@ -5,10 +38,44 @@
     html{
         font-size: 12px;
     }
-    .nav
+    .nav{
         &__item{
             margin-right: 1rem;
         }
+    }
+    .styles{
+        position: static;
+        background: $light;
+        padding-bottom: 0;
+        padding-top: 0;
+        &::before{
+            display: none;
+        }
+        .row{
+            display: flex;
+            justify-content: center;
+        }
+        .section{
+            &-title{
+                margin: auto;
+                &__heading{
+                    text-align: center;
+                }
+                &__img{
+                    display: block;
+                }
+            }
+        }
+        ul{
+            display: none;
+        }
+        .col-1{
+            display: none;
+        }
+        .col-2{
+            display: none;
+        }
+    }
 }
 @media screen and (max-width:992px){
     .nav{
@@ -100,15 +167,21 @@
             }
         }
     }
-    .section{
-        &-title{
-            &__heading{
-                color: $light;
-            }
-            &__subtitle{
-                color: $light;
+    .design{
+        padding-top: 25rem;
+        .section{
+            &-title{
+                &__heading{
+                    color: $light;
+                }
+                &__subtitle{
+                    color: $light;
+                }
             }
         }
+    }
+    .styles{
+        margin-bottom: -25rem;
     }
 
 }
@@ -127,6 +200,13 @@
         font-size: 1.63rem;
     }
     .hero{
+        &__title{
+            font-size: 1.642rem;
+            line-height: 132.83%;
+        }
+        &__text{
+            font-size: 1.285rem;
+        }
         &__scroll-down{
             display: none;
         }
@@ -142,12 +222,23 @@
             min-width: 22.86rem;
             margin-bottom: 1.85rem;
         }
+        &__btn2{
+            display: block;
+            min-width: 22.86rem;
+        }
     }
 }
 @media screen and (max-height:520px){
     .hero{
         &__scroll-down{
             display: none;
+        }
+    }
+}
+@media screen and ( max-width: 460px ){
+    .types{
+        .card__text{
+            max-width: 20.6rem;
         }
     }
 }
