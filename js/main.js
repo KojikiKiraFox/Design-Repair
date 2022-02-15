@@ -25,6 +25,8 @@ $(document).ready(function () {
     });
 
 
+
+
     $(document).on('keydown', function(e) {
     if (e.keyCode == 27)
     modal.removeClass('modal-visible')
